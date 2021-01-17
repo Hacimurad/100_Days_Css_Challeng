@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    background-color: #75C1E8;
+    color: #333;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+}
+
+.row{
+    position: absolute;
+    width: 100%;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    transform-style: preserve-3d;
+    perspective: 100px;
+    
+}
+
+.card{
+    position: absolute;
+    width: 140px;
+	height: 150px;
+    background-color: white;
+    &-header{
+        width: 100%;
+		height: 40px;
+		background-color: #FF9800;
+    }
+    &-body{
+        width: 100%;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+        .line{
+            height: 4px;
+            background-color: rgb(175, 122, 122);
+            margin: 4px;
+        }
+    }
+    
+}
+
+
+.width-30 {
+	width: 30%;
+}
+
+.width-40 {
+	width: 40%;
+}
+
+.width-50 {
+	width: 50%;
+}
+
+.width-60 {
+	width: 60%;
+}
+
+.width-70 {
+	width: 70%;
+}
+
+#card-1 {
+	animation: card-1 5s ease-in-out infinite both;
+}
+#card-2 {
+	animation: card-2 5s ease-in-out infinite both;
+}
+#card-3 {
+	animation: card-3 5s ease-in-out infinite both;
+}
+
+@keyframes card-1 {
+	0%, 100% {
+		transform: translate3d(0, 0, 0);
+	}
+	33.33% {
+  
+    transform: translate3d(145px, 0, -45px);
+ 
+	}
+	66.66% {
+   
+    transform: translate3d(-145px, 0, -45px);
+
+	}
+}
+@keyframes card-2{
+	0%, 100% {
+    transform: translate3d(145px, 0, 45px);
+ 
+	}
+	33.33% {
+  
+    transform: translate3d(-145px, 0, -45px);
+
+	}
+	66.66% {
+    transform: translate3d(0, 0, 0)
+	}
+}
+@keyframes card-3{
+	0%, 100% {
+    transform: translate3d(-145px, 0, -45px);
+    
+	}
+	33.33% {
+    transform: translate3d(0, 0, 0)
+	}
+	66.66% {
+    transform: translate3d(145px, 0, -45px);
+	}
+}

@@ -1,0 +1,102 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #497081;
+  font-family: "Open Sans", Helvetica, sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: 800px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.row {
+  width: 400px;
+  height: 400px;
+  background: -webkit-gradient(linear, left bottom, right top, from(#FDA231), to(#FDCA31));
+  background: linear-gradient(to top right, #FDA231 0%, #FDCA31 100%);
+  line-height: 1.5;
+}
+
+.main_box {
+  width: 300px;
+  height: 300px;
+  margin: 50px;
+  background-color: white;
+}
+
+.main_box .head {
+  border-bottom: 1px solid #D4DCE0;
+  text-align: center;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  margin-bottom: 10px;
+}
+
+.main_box .list {
+  width: 100px;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main_box .list ul {
+  list-style: none;
+  margin: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main_box .list ul li {
+  width: auto;
+  height: 40px;
+}
+
+.main_box .list ul li .label-icon {
+  margin-left: 200px;
+}
+
+.main_box .list label {
+  position: absolute;
+}
+
+input {
+  display: none;
+}
+
+input:checked + label {
+  text-decoration: line-through;
+  opacity: 0.3;
+}
+
+.far:hover {
+  color: #FDA231;
+}
+/*# sourceMappingURL=style.css.map */

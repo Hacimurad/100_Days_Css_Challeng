@@ -1,0 +1,149 @@
+*{
+    color : #786450;
+}
+
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+    overflow: hidden;
+    background: linear-gradient(to top right, #EEBE6C 0%, #CA7C4E 100%);
+}
+
+
+.row{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 300px;
+    height: 320px;
+    background: #fff;
+    display: flex;
+  
+    } 
+
+.profile{
+    flex-grow: 1;
+    text-align: center;
+} 
+
+.static{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+}
+.box{
+    height: 106px;
+    width: 120px;
+    background: #F5E8DF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.box:hover{
+    background: #E1CFC2;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 35px;
+}
+
+.button{
+    border: 1px solid #786450;
+    width: 100px;
+    height: 20px;
+    border-radius: 20px;
+    color: #786450;
+    transition: all .3s;
+    font-weight: 600;
+    margin: 5px;
+}
+
+.button:hover {
+	background: #786450;
+	color: #fff
+}
+
+.img{
+    height: 70px;
+    margin-top: 40px;
+    text-align: center;
+    align-items: center;
+}
+.img img{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.name {
+	font-size: 15px;
+	font-weight: 600;
+	margin: 0;
+	margin-top: 11px;
+}
+
+.title {
+	font-size: 10px;
+	font-weight: 400;
+	margin-top: 5px
+}
+.circle-1{
+    width: 75px;
+	height: 75px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    border: 1px solid;
+    border-color: #786450 transparent #786450 #786450;
+    position: absolute;
+    top: 33px;
+    left: 54px;
+    transition: all 1.5s ease-in-out;
+}
+
+.circle-2{
+    width: 70px;
+	height: 65px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    border: 1px solid;
+    border-color: #786450 #786450 #786450 transparent;
+    position: absolute;
+    top: 38px;
+    left:55px;
+    transition: all 1.5s ease-in-out;
+}
+
+
+
+.img:hover .circle-1 {
+	transform: rotate(-360deg)
+}
+
+.img:hover .circle-2 {
+	transform: rotate(360deg)
+}
+
+.number {
+	font-size: 15px;
+    font-weight: 600;
+    color : #786450;
+}
+
+.post {
+    font-size: 11px;
+    color : #786450;
+}
